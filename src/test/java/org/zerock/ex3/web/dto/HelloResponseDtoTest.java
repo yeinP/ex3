@@ -1,0 +1,20 @@
+package org.zerock.ex3.web.dto;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+
+public class HelloResponseDtoTest {
+
+    @Test
+    @DisplayName("HelloResponseDto 테스트")
+    public void test() {
+        String name = "test";
+        int amount = 100;
+        HelloResPonseDto dto = new HelloResPonseDto(name, amount);
+        assertThat(dto.getName()).isEqualTo(name);
+        assertThat(dto.getAmount()).isEqualTo(amount);
+    }
+}
