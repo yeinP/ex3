@@ -12,8 +12,16 @@
     <p>Orange</p>
 </div>
 
+<div id = "box">
+    <style>#source {color: blue}</style>
+    <p> Hi There</p>
+    <span style = "display: none">hidden message</span>
+</div>
+
 <script>
-    const fruits = document.querySelector(".fruits p");
+  let box = document.querySelector("#box");
+  console.log(box.innerHTML);
+  const fruits = document.querySelector(".fruits p");
     const fruitArray = Array.from(fruits);
     console.log(fruitArray);
 
@@ -21,4 +29,4 @@
     console.log(fruitsNames);
 </script>
 </body>
-</html>
+</html>0

@@ -25,7 +25,7 @@ public class SampleController {
     }
 
     @GetMapping({"/ex223", "/ex22", "/ex2", "/ex24", "/ex25",
-            "/ex26", "/ex27","/ex229", "exLink"})
+            "/ex26", "/ex27","/ex229", "/exLink", "/exDate", "/exDate2"})
     public void exModel(Model model) {
         List<SampleDto> list2 = new ArrayList<>();
         for (int i = 0; i <= 20; i++) {
@@ -74,4 +74,16 @@ public class SampleController {
     public void ex3() {
         log.info("ex3");
     }
+
+    ///////////////////////////////////////////////////////////////
+    //23.09.20
+
+
+
+    @GetMapping({"/exLayout1","/exLayout2", "/exSidebar", "/exTemplate"})
+    public void exLayout1() {
+        log.info("exLayout.................................");
+    }
+
+
 }
